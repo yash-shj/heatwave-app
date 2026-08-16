@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'pytest test_heatwave.py -v'
+                sh 'python3 -m pytest test_heatwave.py -v'
             }
         }
     }
